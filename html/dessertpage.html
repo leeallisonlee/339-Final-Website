@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!-- Head -->
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content='width=device-width, initial-scale=1.0'>
+    <link rel="icon" type="image/png" href="../food_images/icon.png" />
+    <link rel="stylesheet" type="text/css" href="../css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/dessertpage.css">
+    <title>Allison's Foodie Blog</title>
+  </head>
+
+  <!-- Body -->
+  <body>
+    <!-- Skip to Main Content? -->
+    <div class = "skip">
+        <a href="#main">Skip To Main Content</a>
+    </div>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href = "homepage.html">Home</a></li>
+                <li><a href = "foodpage.html">Food</a></li>
+                <li><a href = "dessertpage.html">Dessert</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main id = "main">
+        
+        <div class = "favs">
+            <h1>My Dessert Favorites</h1>
+        </div>
+
+        <div class="controls">
+            <button type="button" class="control" data-filter="all">All</button>
+            <button type="button" class="control" data-filter=".bread">Bread</button>
+            <button type="button" class="control" data-filter=".drinks">Drinks</button>
+            <button type="button" class="control" data-filter=".others">Others</button>
+            
+        </div>
+
+        <div class = "dessert_gallery container">
+            <figure class = "mix bread" data-order = "1"><img src = "../dessert_images/operacake.jpeg" alt = "Tartine Bakery Lemon Meringue Cake & Iced Americano"> <figcaption>Lemon Meringue Cake & Iced Americano</figcaption><br></br><figcaption>from Tartine Bakery Seoul</figcaption></figure>
+            <figure class = "mix bread" data-order = "2"><img src = "../dessert_images/croissant.jpeg" alt = "Caramel Banana Creme Croissant from Ong-geun-dal Seoul"><figcaption>Caramel Banana Creme Croissant</figcaption><br></br><figcaption>from Ong-geun-dal Seoul</figcaption></figure>
+            <figure class = "mix others"><img src = "../dessert_images/icecream.jpeg" alt = "4 different Ice Cream Cups from Baskin Robbins Seoul"><figcaption>31 Yogurt, Mint Chocolate Chip</figcaption><br></br><figcaption>and Mango from Baskin Robbins Seoul</figcaption></figure>
+            <figure class = "mix drinks"><img src = "../dessert_images/starbucks.jpeg" alt = "Grapefruit Honey Black Tea and Vanilla Bean Cold Brew from Starbucks Seoul"><figcaption>Grapefruit Honey Black Tea and Vanilla</figcaption><br></br><figcaption>Bean Cold Brew from Starbucks Seoul</figcaption></figure>
+            <figure class = "mix others"><img src = "../dessert_images/strawberryice.jpeg" alt = "Strawberry Shaved Ice from Dong-Bing-Go Seoul"><figcaption>Strawberry Shaved Ice with Condensed</figcaption><br></br><figcaption>Milk from Dong-Bing-Go Seoul</figcaption></figure>
+            <figure class = "mix drinks"><img src = "../dessert_images/camelcoffee.jpeg" alt = "Camel Coffee on the right and Iced Vanilla Latte on the left from Camel Coffee"><figcaption>Camel Coffee and Iced Vanilla Latte</figcaption><br></br><figcaption>from Camel Coffee</figcaption></figure>
+            <figure class = "mix others"><img src = "../dessert_images/mangoice.jpeg" alt = "Shaved Ice topped with Mango and Cheese from Sul-Bing Seoul"><figcaption>Mango and Cheese Shaved Ice from</figcaption><br></br><figcaption>Sul-Bing Seoul</figcaption></figure>
+            <figure class = "mix drinks"><img src = "../dessert_images/tea.jpeg" alt = "Camomile Tea and Fruit Ade from Shin-ee-do-ga Seoul"><figcaption>Camomile Tea and Fruit Ade from</figcaption><br></br><figcaption>Shin-ee-do-ga Seoul</figcaption></figure>
+            <figure class = "mix bread"><img src = "../dessert_images/croffle.jpeg" alt = "Shredded Cheese Croffle with Vanilla Bean Ice Cream on top from VALT Coffee Seoul"><figcaption>Cheese Croffle with Vanilla Bean Ice</figcaption><br></br><figcaption>Cream from VALT Coffee Seoul</figcaption></figure>
+        </div>
+
+    </main>
+
+  </body>
+
+
+  <!-- Footer -->
+  <footer>
+    <nav>
+        <ul>
+            <li><a href = "mailto: leealli@umich.edu">Email</a></li>
+            <li><a href = "https://leeallisonlee.notion.site/Allison-Lee-931824be31554b01a397dd32d7184596">Website</a></li>
+            <li><a href = "https://www.linkedin.com/in/leeallison104/">LinkedIn</a></li>
+            <li><a href = "https://blog.naver.com/leeallison104">Blog</a></li>
+        </ul>
+    </nav>
+
+  </footer>
+
+  <script src="../js/mixitup.min.js"></script>
+
+  <script>
+    var containerEl = document.querySelector('.container');
+
+    var mixer = mixitup(containerEl);
+  </script>
+
+
+</html>

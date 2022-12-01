@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    overflow:visible;
+}
+main{
+    max-width: 100vw;
+    
+}
+/* Select font for whole page */
+*, a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Style the header bar */
+header nav {
+    background-color: #FFDFDF;
+    text-align: right;
+    padding: 13px;
+    margin-bottom: 50px;
+    position:sticky;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+header nav li {
+    display: inline;
+    padding-right: 10px;
+    
+}
+
+header nav li a {
+    font-size: 12px;
+}
+
+/* Style the footer bar */
+footer nav {
+    background-color: #D1FCFF;
+    text-align: right;
+    padding: 13px;
+    margin-top: 50px;
+    position: sticky;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+footer nav li {
+    display: inline;
+    padding-right: 10px;
+}
+
+footer nav li a {
+    font-size: 11px;
+}
+
+/* Skip to Main Content */
+.skip a{
+    position: absolute;
+    top: -40px;
+
+}
+.skip a:focus { 
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+}
+
+/* style div for my food favorites */
+.favs {
+    background-color: #F3EAFF;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* style button */
+
+:root {
+	--background-color: #ffe5e5;
+	--color: #000000;
+	--feedback-bg-color: #ffffff;
+	--feedback-secondary-color: #FFDFDF;
+	--feedback-primary-color: #53488d;
+	--feedback-icon-color: #ffffff;
+	--feedback-form-input: #f4f4f4;
+}
+
+.controls {
+    text-align: center;
+   
+}
+
+.control {
+	
+	padding: 5px 9px;
+    font-size: 8px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  
+    
+	border-radius: 7px;
+	border-bottom-left-radius: 0;
+  
+	background-color: var(--feedback-secondary-color);
+	color: var(--feedback-primary-color);
+  
+	transition: all 0.3s;
+}
+  
+
+.control:hover {
+    border-radius: 0px;
+
+    color: var(--feedback-primary-color);
+    background-color: var(--background-color);
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffacac' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    animation: animatedBackground 5s linear infinite alternate;
+}
+
+
+@keyframes animatedBackground {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 100% 0;
+	}
+}
+
+
+
+/* end button style */
+
+/* style flex box */
+.dessert_gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px;
+    gap: 60px;
+    justify-content: center;
+    
+}
+
+/* center figure */
+.dessert_gallery figure {
+    text-align: center;
+}
+
+.dessert_gallery br {
+    display: block;
+    content: "";
+    border-bottom: 5px solid transparent;
+}
+/* style items in flex */
+.dessert_gallery img {
+    border-radius: 20px; 
+    width: 70%;
+    height: 80%;
+    text-align: center;
+}
+/* caption decoration */
+.dessert_gallery figcaption {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* tablet view */
+@media screen and (min-width: 481px) {
+     /* style header */
+     *, a {
+        font-size: 20px;
+    }
+
+    header nav li {
+        padding: 17px;
+    }
+
+   header nav li a{
+        font-size: 17px;
+   }
+
+   /* style my favs */
+   .favs {
+        padding: 20px;
+        margin-bottom: 60px;
+   }
+
+   .dessert_gallery {
+        justify-content: center;
+        margin: 40px;
+   }
+
+   /* style flexbox */
+   .dessert_gallery img {
+        border-radius: 20px; 
+        width: 40%;
+        height: 80%;
+        
+    }
+
+    /* style footer */
+   footer nav {
+    padding: 15px;
+    }
+
+    footer nav li a {
+    font-size: 15px;
+
+    }
+
+    /* Style button */
+
+    .control {
+        padding: 5px 9px;
+        font-size: 11px;
+        text-align: center;
+        
+    }
+}
+
+/* Desktop view */
+@media screen and (min-width: 769px) {
+
+     /* style header */
+     *, a {
+        font-size: 25px;
+    }
+
+    header nav li {
+        padding: 21px;
+    }
+
+   header nav li a{
+        font-size: 20px;
+   }
+
+   /* style my favs */
+   .favs {
+        padding: 30px;
+        margin-bottom: 80px;
+   }
+
+    /* style footer */
+    footer nav {
+        padding: 18px;
+   }
+
+   footer nav li a {
+    font-size: 16px;
+    }
+
+    /* style flexbox */
+   .dessert_gallery img {
+        border-radius: 20px; 
+        /* width: 25%;
+        height: 80%; */
+        width: 189px;
+        height: 252px;
+    
+    }
+
+     /* Style button */
+
+     .control {
+        padding: 5px 9px;
+        font-size: 15px;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion) {
+
+    .control:hover {
+        animation: none !important;
+        text-align: center;
+        display:inline;
+        white-space:initial;
+    }
+
+}
+
+
+/* @media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000;
+
+    }
+
+    .container figcaption {
+        color: white;
+    }
+
+    .favs {
+        display:inline-block;
+        padding: 10px;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+    .favs h1 {
+        white-space: nowrap;
+        text-align: center;
+    }
+} */

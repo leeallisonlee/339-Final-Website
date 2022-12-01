@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    overflow:visible;
+}
+main{
+    max-width: 100vw;
+    
+}
+/* Select font for whole page */
+*, a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Style the header bar */
+header nav {
+    background-color: #FFDFDF;
+    text-align: right;
+    padding: 13px;
+    margin-bottom: 50px;
+    position:sticky;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+header nav li {
+    display: inline;
+    padding-right: 10px;
+    
+}
+
+header nav li a {
+    font-size: 12px;
+}
+
+/* Style the footer bar */
+footer nav {
+    background-color: #D1FCFF;
+    text-align: right;
+    padding: 13px;
+    margin-top: 50px;
+    position: sticky;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+footer nav li {
+    display: inline;
+    padding-right: 10px;
+}
+
+footer nav li a {
+    font-size: 11px;
+}
+
+/* Style the photo and first part */
+
+.title {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 70px;
+}
+.title div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#hi {grid-row: 1;}
+#myname {grid-row: 2;}
+#allison {grid-row: 3;}
+.myImage {grid-row: 4; text-align: center;}
+#iam {grid-row: 5;}
+#foodie {grid-row: 6;}
+
+/* Style items inside each grid cell */
+.myImage img {
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.hi h1 {
+    font-size: 26px;
+}
+
+.allison h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.foodie h1 {
+    font-size: 22px;
+}
+
+/* Style Seoul South Korea */
+.seoul {
+    background-color: #D8FFF1;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.seoul h2 {
+    font-size: 24px;
+}
+
+/* Style intro paragraph */
+
+.description {
+    margin: 40px;
+    margin-bottom: 90px;
+}
+.description p {
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Style cover photo */
+.coverimg img {
+    max-width: 100vw;
+    max-height: 100vh;
+    height: auto;
+}
+
+.desktop {
+    display: none;
+}
+
+
+/* Underline on hover */
+a:hover {
+    text-decoration: underline;
+    
+}
+
+/* Highlight on focus */
+a:focus {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #6f67ff, 0 0 20px #6f67ff, 0 0 25px #6f67ff, 0 0 30px #6f67ff, 0 0 35px #6f67ff;
+}
+
+/* Skip to Main Content */
+.skip a{
+    position: absolute;
+    top: -40px;
+
+}
+
+.skip a:focus { 
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+}
+
+/* Style all elements when in focus*/
+*:focus {
+    border: 2px solid;
+}
+
+
+
+
+/* tablet view */
+@media screen and (min-width: 481px) {
+
+    *, a {
+        font-size: 20px;
+    }
+
+    header nav li {
+        padding: 17px;
+    }
+
+   header nav li a{
+        font-size: 17px;
+   }
+
+   .title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items:left;
+    align-items: center;
+    margin-bottom: 70px;
+    
+    }
+
+    #hi {grid-area: 1 / 2 / 2 / 2;}
+    #myname {grid-area: 2 / 2 / 3 / 2;}
+    #allison {grid-area: 3 / 2 / 4 / 2;}
+    .myImage {grid-area: 1 / 1 / 6 / 1; text-align:right;}
+    #iam {grid-area: 4 / 2 / 5 / 2;}
+    #foodie {grid-area: 5 / 2 / 6 / 2;}
+
+    .title h1 {
+        padding-left: 40px;
+        
+    }
+
+    /* Style intro text */
+    .hi h1 {
+        font-size: 30px;
+        
+    }
+    
+    .allison h1 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    
+    .foodie h1 {
+        font-size: 26px;
+    }
+
+    /* footer text */
+
+    footer nav li a {
+        font-size: 15px;
+    }
+
+    /* seoul text */
+    .seoul h2 {
+        font-size: 34px;
+    }
+
+    /* intro paragraph */
+
+    .description p {
+        font-size: 19px;
+    }
+
+    /* change picture of background */
+    .desktop {
+        display:unset;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Animation? */
+    .seoul {
+        overflow: hidden;
+    }
+
+    .seoul h2 {
+        display: inline-block;
+        white-space: nowrap;
+        
+        
+        /* animation properties */
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        
+        -moz-animation: my-animation 8s linear infinite;
+        -webkit-animation: my-animation 8s linear infinite;
+        animation: my-animation 8s linear infinite;
+        
+    }
+    /* for Chrome */
+    @-webkit-keyframes my-animation {
+        from { -webkit-transform: translateX(120%); }
+        to { -webkit-transform: translateX(-200%); }
+    }
+}
+
+/* Desktop view */
+
+@media screen and (min-width: 769px) {
+    *, a {
+        font-size: 23px;
+    }
+    header nav li {
+        padding: 21px;
+    }
+    header nav li a{
+        font-size: 20px;
+   }    
+      /* Style intro text */
+      .hi h1 {
+        font-size: 37px;
+        
+    }
+    
+    .allison h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    .foodie h1 {
+        font-size: 37px;
+    }
+
+    /* footer text */
+    footer nav li {
+        padding: 23px;
+    }
+
+    footer nav li a {
+        font-size: 17px;
+    }
+
+    /* seoul text */
+    .seoul h2 {
+        font-size: 50px;
+    }
+
+    /* intro paragraph */
+
+    .description p {
+        font-size: 24px;
+    }
+
+    
+        /* Animation? */
+    .seoul {
+        overflow: hidden;
+    }
+
+    .seoul h2 {
+        display: inline-block;
+        white-space: nowrap;
+        
+        
+        /* animation properties */
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        
+        -moz-animation: my-animation 8s linear infinite;
+        -webkit-animation: my-animation 8s linear infinite;
+        animation: my-animation 8s linear infinite;
+        
+    }
+    /* for Chrome */
+    @-webkit-keyframes my-animation {
+        from { -webkit-transform: translateX(120%); }
+        to { -webkit-transform: translateX(-200%); }
+    }
+
+    /* Style cover photo */
+    .coverimg img {
+        min-width: 100vw;
+        max-height: 100vh;
+        height: auto;
+    }
+    
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion) {
+
+    .seoul h2 {
+        animation: none !important;
+        text-align: center;
+        display:inline;
+        white-space:initial;
+    }
+
+
+
+}
