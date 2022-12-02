@@ -177,6 +177,24 @@ footer nav li a {
     text-align: center;
 }
 
+/* Style all elements when in focus*/
+*:focus {
+    border: 2px solid;
+}
+
+/* style current page header */
+.dessertpg a{
+    color:#A20141;
+    border:#885789 3px dashed;
+    
+}
+
+/* Style all elements when in focus*/
+*:focus {
+    border: 5px dashed #885789;
+
+}
+
 /* tablet view */
 @media screen and (min-width: 481px) {
      /* style header */

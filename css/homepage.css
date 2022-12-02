@@ -165,10 +165,15 @@ a:focus {
 
 /* Style all elements when in focus*/
 *:focus {
-    border: 2px solid;
+    border: 5px dashed #885789;
+
 }
 
-
+.homepg a{
+    color:#A20141;
+    border:#885789  3px dashed;
+    
+}
 
 
 /* tablet view */

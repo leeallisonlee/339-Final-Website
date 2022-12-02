@@ -103,6 +103,17 @@ footer nav li a {
     
 }
 
+/* Style current header */
+.foodpg a{
+    color:#A20141;
+    border:#885789 3px dashed;
+}
+
+/* Style all elements when in focus*/
+*:focus {
+    border: 5px dashed #885789;
+
+}
 
 
 
