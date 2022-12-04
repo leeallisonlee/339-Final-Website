@@ -83,6 +83,14 @@ footer nav li a {
     margin-bottom: 40px;
 }
 
+/* Style press image guide */
+.guide h2 {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
 /* style grid  */
 
 .food_gallery {
@@ -154,9 +162,9 @@ footer nav li a {
         height: auto;
    }
 
-   /* .food_gallery img {
-        
-   } */
+   .guide h2 {
+    font-size: 13px;
+   }
 
    /* style footer */
    footer nav {
@@ -205,6 +213,10 @@ footer nav li a {
     /* style footer */
     footer nav {
         padding: 18px;
+   }
+
+   .guide h2 {
+    font-size: 16px;
    }
 
    footer nav li a {
