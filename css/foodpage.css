@@ -206,6 +206,8 @@ footer nav li a {
    }
 
    .food_gallery {
+    margin-left: 25px;
+    margin-right:25px;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     justify-content: center;
@@ -213,7 +215,11 @@ footer nav li a {
     margin-bottom: 70px;
     row-gap: 25px;
     grid-template-rows: repeat(3, 280px);
+    background-color: rgb(225, 255, 227);
+    border-radius: 20px;
+    padding-top: 25px;
     }
+
 
     /* style footer */
     footer nav {

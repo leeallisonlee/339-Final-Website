@@ -229,6 +229,13 @@ footer nav li a {
         
     }
 
+    .mix {
+        background-color: #fdffcf;
+        padding: 5px;
+        border-radius:15px;
+        
+    }
+
     /* style footer */
    footer nav {
     padding: 15px;
@@ -278,6 +285,13 @@ footer nav li a {
 
    footer nav li a {
     font-size: 16px;
+    }
+
+    /* Tester */
+    .mix {
+        background-color: #FFDFDF;
+        padding: 20px;
+        border-radius:15px;
     }
 
     /* style flexbox */
