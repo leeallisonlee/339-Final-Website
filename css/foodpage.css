@@ -123,6 +123,11 @@ footer nav li a {
 
 }
 
+/* Decorate Map */
+#map {
+    height: 400px;
+    width: 100%;
+}
 
 
 
